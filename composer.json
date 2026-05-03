@@ -21,5 +21,7 @@
   ],
   "require": {
     "illuminate/session": "^13.7"
-  }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
