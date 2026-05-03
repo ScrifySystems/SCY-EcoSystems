@@ -1,0 +1,12 @@
+{
+  "users": {
+    "dev": {
+      "password": "1234",
+      "role": "developer"
+    },
+    "admin": {
+      "password": "admin123",
+      "role": "admin"
+    }
+  }
+}

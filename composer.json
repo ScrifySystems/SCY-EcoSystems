@@ -1,0 +1,25 @@
+{
+  "name": "btv/core",
+  "description": "The ecoSystems of SCY",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "SCY\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "SCY\\Core\\FileManager\\Services\\FileManagerService"
+      ]
+    }
+  },
+  "authors": [
+    {
+      "name": "ChristiannX"
+    }
+  ],
+  "require": {
+    "illuminate/session": "^13.7"
+  }
+}
