@@ -1,5 +1,5 @@
 <?php 
-namespace SCY\Core\FileManager\Controllers;
+namespace SCY\Core\Modules\FileManager\Controllers;
 
 class AuthController
 {

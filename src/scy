@@ -1,0 +1,32 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '/../../autoload.php';
+
+use Scy\Core\Routes\Route;
+
+$command = $argv[1] ?? null;
+
+switch ($command) {
+
+    case 'route:list':
+        Route::load();
+        print_r(Route::list());
+        break;
+
+    case 'route:test':
+        Route::load();
+
+        $uri = $argv[2] ?? '/';
+        $method = $argv[3] ?? 'GET';
+
+        var_dump(Route::dispatch($uri, $method, false));
+        break;
+
+    default:
+        echo "BTV Core CLI\n";
+        echo "Commands:\n";
+        echo "  route:list\n";
+        echo "  route:test /uri GET\n";
+        break;
+}
